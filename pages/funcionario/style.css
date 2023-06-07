@@ -73,12 +73,14 @@ header {
   }
   
   #user-photo {
-    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 70px; /* Ajuste o tamanho da imagem conforme necessário */
     border-radius: 50%; /* Cria a forma esférica */
     margin-right: 10px; /* Adiciona espaço entre a foto e o nome */
     background-color: #c8e6c9;
-  }
+    background-position: center;
+    background-size: cover;
+}
   
   #user-name {
     font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
