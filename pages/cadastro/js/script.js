@@ -12,7 +12,8 @@ const buttonCriar = document.getElementById("button-criar")
 const criarFuncionario = async (data) => {
 
   const status = await criarContaFuncionario(data)
-  if(status){
+  console.log(status);
+  if(status.status == 201){
     let mensagemSucesso = document.createElement('p');
     mensagemSucesso.textContent = "Cadastro realizado com secesso.";
     mensagemSucesso.classList.add('sucesso');
@@ -20,6 +21,14 @@ const criarFuncionario = async (data) => {
     setTimeout(() => {
       mensagemSucesso.remove();
     }, 4000); // Remover a mensagem após 3 segundos (3000 milissegundos)
+  } else {
+    let mensagemErro = document.createElement('p');
+    mensagemErro.textContent = 'Atenção Funcionario já possui cadastrado.';
+    mensagemErro.classList.add('erro');
+    document.body.appendChild(mensagemErro);
+    setTimeout(() => {
+      mensagemErro.remove()
+    }, 5000)
   }
 
 }
@@ -57,6 +66,8 @@ let admDeletar = '';
 
 const demitirFuncionario = async (email) => {
   let statusConta = await admDelete(email.toLowerCase());
+
+  console.log(statusConta);
 
   if(statusConta.status == 201){
     let mensagemSucesso = document.createElement('p');
