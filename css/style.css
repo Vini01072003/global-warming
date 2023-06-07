@@ -1,0 +1,84 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px white
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 216, 101, 1);
+    border-radius: 50px;
+}
+
+.section {
+    display: none;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "content";
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffff;
+}
+
+header{
+    grid-area: content;
+    place-self: start center;
+    z-index: 1;
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    height: 1fr;
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    height: 1fr;
+}
+
+.voltar{
+    position: fixed;
+    right: 26px;
+    bottom: 96px;
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.voltar:hover{
+    transform: scale(1.3);
+}
+
+#video-background{
+    position: absolute;/*Posicionado em relação ao elemento pai*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Preenche toda a div sem distroção*/
+    z-index: -1; /*Garante que o video fique de fundo*/
+    filter: brightness(.22); /*Deixa o video mais escuro ou claro (quanto mais baixo o valor, mais escuro fica)*/
+}
+
+.div-menu {
+    display: none;
+}

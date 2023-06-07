@@ -1,0 +1,66 @@
+.sobre {
+    display: flex;
+    width: 100%;
+    background-image: url(/img/sobre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-sobre {
+    display: grid;
+    grid-template-rows: 35% 65%;
+    align-items: center;
+}
+
+.container-historia a {
+    color: transparent;
+}
+
+.title-container{
+    font-size: 7rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+}
+
+.descricao-sobre {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    padding: 25px 60px;
+}
+
+.container-historia {
+    display: grid;
+    grid-template-rows: 125px 270px 1fr;
+    padding: 0px 60px;
+}
+
+.container-objetivo {
+   display: grid;
+   grid-template-rows: 125px 270px 1fr;
+    justify-content: space-between;
+    padding: 0px 60px;
+
+}
+
+.container-objetivo a {
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-align: end;
+
+}
+
+.descricao {
+    font-size: 1.6rem;
+}
+
+.container-objetivo .descricao {
+    font-size: 1.8rem;
+}

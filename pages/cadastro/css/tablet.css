@@ -1,0 +1,28 @@
+@media (max-width: 980px) {
+
+    .administrador img {
+        display: none;
+    }
+
+    .administrador p {
+        display: none;
+    }
+
+    .menu {
+        gap: 30px;
+        font-size: 1.3rem;
+     }
+
+    header{
+        padding: 0px 0px;
+        justify-content: space-evenly;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    .box {
+        width: 750px;
+    }
+}

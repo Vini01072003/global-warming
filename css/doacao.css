@@ -1,0 +1,259 @@
+.doacao-section {
+    display: grid;
+    width: 100%;
+    background-color: white;
+    padding: 45px 0px;
+    height: 1fr;
+}
+
+
+.significado-doacao{
+    padding: 55px 75px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-doacao {
+    color: rgba(121, 216, 101, 1);
+    font-size: 2.8rem;
+}
+
+.descricao-doacao {
+    display: flex;
+    color: black;
+    max-width: 85%;
+    font-size: 1.5rem;
+}
+
+.imagem {
+    display: flex;
+    height: 550px;
+    width: 100%;
+    background-image: url(/img/doacao.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 45vh;
+    gap: 140px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(205, 205, 205, 1);
+    gap: 50px;
+    height: 345px;
+    width: 355px;
+    position: relative;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.descricao-plano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 55px;
+    gap: 40px;
+}
+
+#checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.buttom-doar {
+    display: flex;
+    bottom: -45px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    width: 235px;
+    height: 85px;
+    background-color: rgba(89, 186, 73, 1);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.descricao-plano h3 {
+    color: rgba(89, 186, 73, 1);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.descricao-plano p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.descricao-plano .valor {
+    font-size: 1.7rem;
+    color: rgba(89, 186, 73, 1);
+    font-weight: bold;
+}
+
+.acordo {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 230px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.acordo a {
+    font-weight: bold;
+    color: rgba(31, 94, 23, 1);
+}
+
+#valor-desejado {
+    font-size: 3.1rem;
+}
+
+#privacidade {
+    gap: 30px;
+    display: flex;
+}
+
+#erro-messagem {
+    font-size: .8rem;
+    color: #ff2e2e;
+}
+
+.card:hover {
+    transform: scale(1.06);
+}
+
+/*TABLET */
+
+@media (max-width: 960px) {
+
+    .significado-doacao {
+        padding: 50px;
+    }
+
+    .significado-doacao  .title-doacao {
+        font-size: 3rem;
+    }
+
+    .descricao-doacao {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .imagem {
+        height: 200px;
+        padding: 50px 0px;
+    }
+
+    .container-card {
+        gap: 65px;
+        padding: 50px 100px;
+    }
+
+    .acordo {
+        padding: 60px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 30px 0px;
+        height: 330px;
+        gap: 40px;
+    }
+
+    .card {
+        height: 225px;
+        width: 260px;
+        padding: 0px 30px;
+
+    }
+
+    .descricao-plano{
+        text-align: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 20px;
+    }
+    
+    .buttom-doar {
+        font-size: 1rem;
+        width: 145px;
+        height: 45px;
+        bottom: -25px;
+    }
+    
+    .descricao-plano h3 {
+        font-size: 1.7rem;
+    }
+    
+    .descricao-plano p {
+        font-size: 1rem;
+    }
+    .descricao-plano .valor {
+        font-size: 1rem;
+    }
+
+.descricao-plano .b {
+    font-size: 1.7rem;
+}
+
+#valor-desejado {
+    font-size: 2.5rem;
+}
+
+}
+
+/*MOBILE */
+@media (max-width: 640px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        font-size: 1rem;
+        width: 120px;
+    }
+    select {
+        font-size: 1rem;
+        width: 90px;
+    }
+
+    .significado-doacao {
+        padding: 40px;
+    }
+
+    .significado-doacao .title-doacao {
+        max-width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .descricao-doacao {
+        font-size: .8rem;
+        max-width: 100%;
+    }
+
+    .container-card {
+        padding: 50px 0px;
+    }
+
+    #privacidade p{
+        font-size: 1rem;
+    }
+
+}

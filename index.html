@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9fa01aebbd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/parceria.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/doacao.css">
+    <link rel="icon" href="./img/icon.png">
+    <script src="js/contador.js" defer></script>
+    <script src="js/mudar_tela.js" defer></script>
+
+    <!-- Calculadora -->
+
+    <script src="js/calculadora.js" defer></script>
+
+    <!-- Doação -->
+
+    <script src="js/doacao.js" defer></script>
+
+    <title>Global Warming</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="img/icon.png" alt="">
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a onclick="mostrarDiv(3)" href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#parceria" id="opcao3" onclick="mostrarDiv(3)">Parceria</a>
+                </li>
+                <li>
+                    <a href="#calculadora" id="opcao2" onclick="mostrarDiv(2)">Calculadora de CO2</a>
+                </li>
+                <li>
+                    <a href="#doacao" id="opcao1" onclick="mostrarDiv(1)">Doação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <select name="login" id="login">
+            <option value="">Login</option>
+            <option value="../../formularios/form_entrar_conta_funcionario/index.html">Empresarial</option>
+            <option value="../../formularios/form_entrar_conta/index.html">Usuário</option>
+        </select>
+
+    </header>
+    <main>
+
+        <a href="#" class="voltar">
+            <i class="fas fa-arrow-circle-up" style="color: rgba(121, 216, 101, 1);"></i>
+        </a>
+
+        <section class="home" id="home">
+            <div class="container-contador">
+                <div class="title-home">
+                    <img class="arvore" src="./img/arvore.png" alt="">
+                    <h2>Árvores cortadas em 2023</h2>
+                </div>
+                <div class="contador">
+                    <h2 id="numero">99.016.000</h2>
+                </div>
+
+            </div>
+
+            <video autoplay muted loop id="video-background" src="/video/home.mp4"></video>
+
+        </section>
+
+        <div class="div-menu" id="div3">
+            <section class="sobre" id="sobre">
+
+                <div class="container-sobre">
+
+                    <div class="title-container">
+                        <h1>Sobre</h1>
+                    </div>
+
+                    <div class="descricao-sobre">
+
+                        <div class="container-historia">
+
+                            <div class="title">
+                                <h2>Historia</h2>
+                            </div>
+
+                            <div class="descricao">
+                                <p>
+                                    Somos uma empresa de chocolates que utiliza ingredientes 100% nacionais. Na Dream
+                                    Choc,
+                                    reconhecemos a importância no combate ao aquecimento global. Como indústria, temos
+                                    um
+                                    papel fundamental nessa luta. Para contribuir na redução dessas mudanças, estamos
+                                    investindo em embalagens recicláveis e na adoção de energias renováveis em nossas
+                                    fábrica.
+                                </p>
+                            </div>
+
+                            <a href="#">Saiba Mais</a>
+
+
+                        </div>
+
+                        <div class="container-objetivo">
+
+                            <div class="title">
+                                <h2>Objetivo</h2>
+                            </div>
+
+                            <div class="descricao">
+                                <p>
+                                    O objetivo do nosso projeto é estabelecer uma parceria com a ONG "Onda Verde" com o
+                                    propósito de mobilizar e conscientizar indivíduos e empresas em um movimento
+                                    coletivo
+                                    para restaurar áreas desmatadas no país.
+                                </p>
+                            </div>
+
+                            <a href="#">Saiba Mais</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </section>
+
+            <section class="parceria" id="parceria">
+
+                <div class="container-parceria">
+
+                    <div class="title-container">
+                        <h1>Parceria</h1>
+                    </div>
+
+                    <div class="descricao-parceria">
+
+                        <div class="descricao-onda">
+
+                            <div>
+                                <img src="/img/onda-verde.png" alt="">
+                            </div>
+
+                            <p>
+                                Sobre a Onda Verde
+                                Somos uma entidade não governamental, sem fins lucrativos, que dissemina informações
+                                sobre
+                                meio ambiente e sustentabilidade, atua na conservação da diversidade biológica do Bioma
+                                Mata
+                                Atlântica e estimula ações para o desenvolvimento sustentável.<br><br>Nós mobilizamos,
+                                capacitamos, incluímos e despertamos pessoas para o exercício da cidadaniae a
+                                preservação
+                                ambiental.
+                            </p>
+
+                        </div>
+
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ag2BOz1nVIM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+            </section>
+        </div>
+
+
+        <div class="div-menu" id="div2">
+            <section class="calculadora-section" id="calculadora">
+
+                <div class="significado-calculadora">
+
+                    <div class="title-calculadora">Calculadora de CO <span>2</span></div>
+                    <div class="descricao-calculadora">
+                        <h2>O que é pegada de carbono?</h2>
+                        <p>
+                            Atividades do dia a dia emitem, direta ou indiretamente, gases causadores das mudanças
+                            climáticas.
+                            Use a calculadora para descobrir sua pegada de carbono e quantas árvores precisa plantar
+                            para
+                            compensar essas emissões!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="imagem-calculadora"></div>
+
+
+                <div class="container-etapa">
+
+                    <div class="linha-etapa">
+
+                        <div class="etapa eletrica">
+                            <div class="circulo eletrica circulo-verde"></div>
+                            <p class="escrita eletrica escrita-etapa">Casa-eletricidade</p>
+                        </div>
+
+                        <div class="etapa gas">
+                            <div class="circulo gas"></div>
+                            <p class="escrita gas">Casa-gás</p>
+                        </div>
+
+                        <div class="etapa transporte">
+                            <div class="circulo transporte"></div>
+                            <p class="escrita transporte">Transporte</p>
+                        </div>
+
+                        <div class="etapa resultado">
+                            <div class="circulo resultado"></div>
+                            <p class="escrita resultado">Resultado</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="container-calculo">
+
+                    <!-- Calculo do consumo de Energia -->
+                    <div class="imagem-eletrica">
+                        <div class="title-eletrica">
+                            <h1 class="consumo-eletrica">Consumo de eletricidade</h1>
+                        </div>
+                        <p class="paragrafo-eletrica">Insira seu consumo MENSAL de energia. Veja onde encontrar essa
+                            informação
+                            na sua conta de energia elétrica</p>
+                        <form class="form-control-eletrica">
+                            <input type="text" disabled placeholder="R$/mês" />
+                            <input type="text" id="valor-eletrica"
+                                oninput="formatarValorReais(); calcularEmissoesEletricidade(); formatarResultado()"
+                                maxlength="11" placeholder="Digite o valor da conta">
+                        </form>
+                        <div class="enviar-eletrica">
+                            <button id="button-eletrica" type="submit">PRÓXIMO PASSO</button>
+                            <div class="descricao-form-eletrica">
+                                <p class="descricao_emissoes-eletrica">Emissões mensais (kg CO²e): <span
+                                        id="emissoes_mensais-eletricidade"></span></p>
+                                <p class="descricao_emissoes-eletrica">Emissões anuais (kg CO²e): <span
+                                        id="emissoes_anuais-eletricidade"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculo do consumo de Gás -->
+                    <div class="imagem-gas">
+                        <div class="title-gas">
+                            <h1 class="consumo-gas">Consumo de gás</h1>
+                        </div>
+                        <p class="paragrafo-gas">Insira seu consumo MENSAL de gás, inserir a quantidade de botijões de
+                            gás
+                            que
+                            consome em sua casa.</p>
+                        <form class="form-control-gas">
+                            <input type="text" disabled placeholder="Quantidade de botijões/mês" />
+                            <input type="text" id="valor-gas"
+                                oninput="calcularEmissaoGases(); formatarInputGas(); formatarResultado()" maxlength="2"
+                                placeholder="Total de botijões por mês">
+                        </form>
+                        <div class="enviar-gas">
+                            <button id="button-gas" type="submit">PRÓXIMO PASSO</button>
+                            <div class="descricao-form-gas">
+                                <p class="descricao_emissoes-gas">Emissões mensais (kg CO²e): <span
+                                        id="emissoes_mensais_gases"></span></p>
+                                <p class="descricao_emissoes-gas">Emissões anuais (kg CO²e): <span
+                                        id="emissoes_anuais_gases"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculo do consumo de quilometragem -->
+                    <div class="imagem-transporte">
+                        <div class="title-transporte">
+                            <h1 class="consumo-transporte">Transporte</h1>
+                        </div>
+                        <p class="paragrafo-transporte">Neste item, você preencherá as informações relacionadas ao seu
+                            transporte individual, no seu dia a dia.</p>
+                        <form class="form-control-transporte">
+                            <input type="text" disabled placeholder="km/mês" />
+                            <input type="text" id="valor-transporte"
+                                oninput="calcularEmissaoTransporte(); formatarInputTransporte(); formatarResultado()"
+                                maxlength="10" placeholder="Total de km rodados no mês">
+                        </form>
+                        <div class="enviar-transporte">
+                            <button id="button-transporte" type="submit">PRÓXIMO PASSO</button>
+                            <div class="descricao-form-transporte">
+                                <p class="descricao_emissoes-transporte">Emissões mensais (kg CO²e): <span
+                                        id="emissoes_mensais_transporte"></span></p>
+                                <p class="descricao_emissoes-transporte">Emissões anuais (kg CO²e): <span
+                                        id="emissoes_anuais_transporte"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Resultado do Calculo -->
+                    <div class="imagem-resultado">
+
+                        <div class="title-resultado">
+                            <h1 class="consumo-resultado">Resultado</h1>
+                        </div>
+
+                        <p class="paragrafo-resultado">Resumo de suas emissões de gases de efeito estufa anuais</p>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Fonte</th>
+                                    <th>Emissões (tCO²e)</th>
+                                    <th>%</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Eletricidade</td>
+                                    <td id="qtd-emissao-eletrica">0</td>
+                                    <td id="porcentagem-emissao-eletrica">0%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Gás</td>
+                                    <td id="qtd-emissao-gas">0</td>
+                                    <td id="porcentagem-emissao-gas">0%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Transporte</td>
+                                    <td id="qtd-emissao-transporte">0</td>
+                                    <td id="porcentagem-emissao-tranporte">0%</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-total">TOTAL</td>
+                                    <td id="emissao-total" class="td-emissao">0</td>
+                                    <td id="porcentagem-emissao-total" class="td-emissao">0%</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <p class="compensar-resultado">Para compensar suas emissões é preciso restaurar <span
+                                id="metro-quadrado">0</span> m² de floresta.
+                            Isso equivale a <span id="total-arvores">0</span> árvores.</p>
+
+                        <button id="button-resultado" type="submit">COMPENSAR R$(<span
+                                id="valor-compensar">00</span>,00)</button>
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+
+
+        <div class="div-menu" id="div1">
+            <section class="doacao-section" id="doacao">
+
+
+                <div class="significado-doacao">
+                    <div>
+                        <h1 class="title-doacao">O que é feito com o dinheiro?</h1>
+                    </div>
+                    <div class="descricao-doacao">
+                        <p>Todo o dinheiro arrecadado é usado para subsidiar a restauração florestal, desde o trabalho
+                            de
+                            prospecção de áreas degradadas com necessidade de restauração até o monitoramento e
+                            acompanhamento
+                            do restauro até que a floresta atinga os parâmetros necessários para ser considerada
+                            "independente",
+                            ou seja, que tem capacidade de continuar crescendo e se desenvolvendo por conta própria.</p>
+                    </div>
+                </div>
+
+                <div class="imagem">
+                </div>
+
+                <div class="container-card">
+
+                    <div class="card">
+
+                        <div class="descricao-plano">
+                            <h3>Plano Aracária</h3>
+                            <p>Contribui em média com o crescimento de uma árvore por mês numa área de restauração da
+                                Mata
+                                Atlântica.</p>
+                            <p class="valor">R$ 20,00/mês</p>
+                        </div>
+
+                        <button class="buttom-doar">Doar</button>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="descricao-plano">
+                            <h3>Plano Ipê</h3>
+                            <p>Contribui em média com o crescimento de três árvore por mês numa área de restauração da
+                                Mata
+                                Atlântica.</p>
+                            <p class="valor">R$ 60,00/mês</p>
+                        </div>
+
+                        <button class="buttom-doar">Doar</button>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="descricao-plano">
+                            <h3>Plano Juçara</h3>
+                            <p>Contribui em média com o crescimento de cinco árvore por mês numa área de restauração da
+                                Mata
+                                Atlântica.</p>
+                            <p class="valor">R$ 100,00/mês</p>
+                        </div>
+
+                        <button class="buttom-doar">Doar</button>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="descricao-plano">
+                            <h3 id="valor-desejado">Valor desejado</h3>
+                        </div>
+
+                        <button class="buttom-doar">Doar</button>
+                    </div>
+
+
+                </div>
+
+                <div class="acordo">
+                    <div id="privacidade">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+
+                        <p>Li e concordo com a <a href="#">política de privacidade</a> </p>
+                    </div>
+                    <div id="erro-messagem"></div>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="container-contato">
+
+            <div class="contato">
+                <i class="fa-solid fa-phone"></i><span>(11) 4774-4700</span>
+            </div>
+
+            <div class="contato">
+                <i class="fa-solid fa-envelope"></i><span>globalwarming@gmail.com</span>
+            </div>
+
+            <div class="contato">
+                <i class="fa-solid fa-location-dot"></i><span>Rua tcc, 211, Centro, Jandira</span>
+            </div>
+        </div>
+
+        <div class="container-copy">
+            <img src="/img/onda-verde.png" alt="">
+        </div>
+
+        <div class="container-social">
+
+            <div class="social">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

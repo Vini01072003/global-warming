@@ -1,0 +1,30 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contador{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    gap: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    color: var(--color-primary);
+}

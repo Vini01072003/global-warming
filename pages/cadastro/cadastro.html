@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9fa01aebbd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/pages/cadastro/css/style.css">
+    <link rel="stylesheet" href="/pages/cadastro/css/tablet.css">
+    <script src="/pages/cadastro/js/rotas.js" defer></script>
+    <script src="./js/script.js" defer type="module"></script>
+
+    <!-- excluir -->
+    <link rel="stylesheet" href="/pages/cadastro/css/excluir.css">
+    <!-- Criar -->
+    <link rel="stylesheet" href="/pages/cadastro/css/criar.css">
+    <!-- Doador -->
+
+    <title>Lista de Funcionários</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="/img/icon.png" alt="">
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/pages/listaDoacao/empresarial.html">Registro de Doações</a>
+                </li>
+
+                <li>
+                    <a href="#">Cadastro de funcionario</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="administrador">
+            <img src="/img/Man.png" alt="">
+            <p>Administrador</p>
+        </div>
+
+        <a class="sair" href="/index.html">
+            <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </a>
+
+
+    </header>
+
+    <main>
+
+          <div style="display: none;" class="box-doador">
+
+            <div class="box-header-doador">
+                <p>Nome</p>
+                <p>Email</p>
+                <p>Valor</p>
+            </div>
+         
+            <div class="box-main-doador">
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="doador">
+                    <div class="informacoes">
+                        <p>Guilherme</p>
+                        <p>Guilherme@gmail.com</p>
+                        <p>R$: 55,00</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+
+            <div class="box-header" id="div-menu">
+                <!-- <a href="#" id="opcao3" onclick="mostrarDiv(3)">Lista de Funcionários</a> -->
+                <a href="#" id="opcao2" onclick="mostrarDiv(2)">Novo Cadastro</a>
+                <a href="#" id="opcao1" onclick="mostrarDiv(1)">Excluir Cadastro</a>
+              </div>              
+
+            <div class="box-conteudo">
+
+                <!-- Excluir Funcionario -->
+                <div class="div-menu" id="div1">
+                    <form id="form-excluir" class="form validate-form">
+                        <div class="form-control-excluir-funcionario">
+                            <label for="username">Nome</label>
+                            <input type="text" id="username-excluir" placeholder="Digite o nome do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small id="error-message-excluir">Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-control-excluir-funcionario">
+                            <label for="email">Email</label>
+                            <input type="text" id="email-excluir" placeholder="Digite o email do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-control-excluir-funcionario">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password-excluir" placeholder="Digite a senha do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-image-excluir-funcionario">
+                            <button id="button-excluir" type="click">Excluir</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Criar Funcionario -->
+                <div class="div-menu" id="div2">
+                    <form id="form-criar" class="form validate-form">
+                        <div class="form-control-criar-funcionario">
+                            <label for="username">Nome</label>
+                            <input type="text" id="username-criar" placeholder="Digite o nome do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small id="error-message-criar">Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-control-criar-funcionario">
+                            <label for="email">Email</label>
+                            <input type="text" id="email-criar" placeholder="Digite o email do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-control-criar-funcionario">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password-criar" placeholder="Digite a senha do funcionário" />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>
+                        </div>
+
+                        <div class="form-image-criar-funcionario">
+                            <img src="/img/funcionario.png" alt="">
+                            <input type="text" id="cria-url-foto" placeholder="Digite a URL da foto" />
+                            <button id="button-criar" type="submit">Cadastrar</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+                <!-- Lista de Funcionario -->
+                <div class="container-funcionario div-menu" id="div3">
+
+                    <div class="box-descricao">
+                        <p>Nome</p>
+                        <p>Email</p>
+                    </div>
+
+                    <div class="box-funcionario">
+
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+
+
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+
+
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="funcionario">
+                            <div class="informacoes">
+                                <p>Guilherme</p>
+                                <p>Guilherme@gmail.com</p>
+                            </div>
+                            <div class="linha"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+.form-image-criar-funcionario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    margin-top: -30vh;
+    transform: translate(5cm, -1.5cm);
+}
+
+form {
+    padding: 30px;
+}
+
+.form-image-criar-funcionario img {
+    height: 170px;
+    width: 170px;
+}
+
+.form-image-criar-funcionario input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: 260px;
+    padding: 16px;
+}
+
+.form-image-criar-funcionario button {
+    background-color: rgba(89, 186, 73, 0.7);
+    border: none;
+    height: 60px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+/**********    Form Esquerdo      ************/
+
+
+.form-control-criar-funcionario {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.form-control-criar-funcionario label {
+    font-size: 1.4rem;
+    padding: 10px 10px;
+}
+
+.form-control-criar-funcionario small {
+    padding: 5px 10px;
+    visibility: hidden;
+
+}
+
+.form-control-criar-funcionario input {
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    width: 364px;
+    height: 50px;
+    padding: 15px;
+}
+
+.form-control-criar-funcionario i {
+    gap: 20px;
+    position: absolute;
+    top: 62px;
+    right: -13px;
+    /* background-color: red; */
+    visibility: hidden;
+}
+
+/* Error and Success
+.form-control-criar-funcionario.success input {
+    border-color: #2ecc71;
+}
+
+.form-control-criar-funcionario.error input {
+    border-color: #e74c3c;
+}
+
+.form-control-criar-funcionario.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control-criar-funcionario.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control-criar-funcionario.error small {
+    visibility: visible;
+    color: #e74c3c;
+} */
+
+.erro {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    background-color: #eaf7e3;
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    min-width: 320px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+
+  .sucesso {
+    position: absolute;
+    color: green;
+    font-weight: bold;
+    background-color: #eaf7e3;
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    min-width: 320px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+
+/* Tablet */
+
+@media (max-width: 980px) {
+
+    .administrador {
+        display: none;
+    }
+
+    .menu {
+        overflow-x: auto;
+        gap: 30px;
+        font-size: 1.3rem;
+    }
+
+    header {
+        padding: 0px 0px;
+        justify-content: space-evenly;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    .box-criar-funcionario {
+        width: 750px;
+    }
+
+    .form-image-criar-funcionario {
+
+        margin-top: -19vh;
+        transform: translate(11cm, -3.9cm);
+    }
+}
